@@ -1,12 +1,11 @@
 <?php
+spl_autoload_register(function ($clase) {
 
-    spl_autoload_register("CargarClases");
+    $ruta ="../Modelo/";
+    
+    $ruta_completa = $ruta . $clase . ".php";
 
-    function CargarClases($clase) {
-        $ruta = "../modelo/";
-        $extension= ".php";
-
-        $ruta_completa = $ruta.$clase.$extension;
-
+    if (file_exists($ruta_completa)) {
         include_once $ruta_completa;
     }
+});

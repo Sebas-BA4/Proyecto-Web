@@ -1,0 +1,19 @@
+<?php
+   
+
+    class CRUDCategoria extends Conexion {
+
+        public function ListarCategoria() {
+            $arr_cat = null;
+            $cn = $this->Conectar();
+            $sql = "call sp_listar_categoria()";
+            $snt = $cn->prepare($sql);
+            $snt->execute();
+            $arr_cat = $snt->fetchAll(PDO::FETCH_OBJ);
+            $cn = null;
+            return $arr_cat;
+        } 
+    }
+
+    
+
