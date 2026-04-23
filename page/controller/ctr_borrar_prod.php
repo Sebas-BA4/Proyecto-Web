@@ -1,11 +1,11 @@
 <?php 
-    include "./page/includes/cargar_clases.php";
+    include "..includes/cargar_clases.php";
 
 
     $crudproducto = new CRUDProducto();
 
-    IF (isset($_GET["cod_prod"])) {
-        $cod_prod = $_GET["cod_prod"];
+    IF (isset($_GET["codprod"])) {
+        $cod_prod = $_GET["codprod"];
 
         $crudproducto->BorrarProducto($cod_prod);
 

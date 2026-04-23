@@ -12,7 +12,22 @@
             return $arr_prod;
         }
 
-        public function ConsultarProductoPorCodigo($cod_prod){
+        // public function ConsultarProductoPorCodigo($cod_prod){
+        //     $arr_prod = null;
+        //     $cn = $this->Conectar();
+        //     $sql = "call sp_buscar_producto_por_codigo(:cod_prod)";
+        //     $snt = $cn->prepare($sql);
+        //     $snt->bindParam(":cod_prod", $cod_prod, PDO::PARAM_STR, 5);
+        //     $snt->execute();
+        //     $nr = $snt->rowCount();
+        //     if ($nr > 0){
+        //         $arr_prod = $snt->fetch(PDO::FETCH_OBJ);
+        //     }
+        //     $cn = null;
+        //     return $arr_prod;
+        // }
+
+        public function MostrarProductoPorCodigo($cod_prod) {
             $arr_prod = null;
             $cn = $this->Conectar();
             $sql = "call sp_buscar_producto_por_codigo(:cod_prod)";
@@ -26,21 +41,6 @@
             $cn = null;
             return $arr_prod;
         }
-
-        // public function MostrarProductoPorCodigo($cod_prod) {
-        //     $arr_prod = null;
-        //     $cn = $this->Conectar();
-        //     $sql = "call sp_mostrar_producto_por_codigo(:cod_prod)";
-        //     $snt = $cn->prepare($sql);
-        //     $snt->bindParam(":cod_prod", $cod_prod, PDO::PARAM_STR, 5);
-        //     $snt->execute();
-        //     $nr = $snt->rowCount();
-        //     if ($nr > 0){
-        //         $arr_prod = $snt->fetch(PDO::FETCH_OBJ);
-        //     }
-        //     $cn = null;
-        //     return $arr_prod;
-        // }
 
         public function FiltrarProducto($valor) {
             $arr_prod = null;

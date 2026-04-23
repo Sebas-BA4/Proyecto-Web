@@ -1,0 +1,87 @@
+/* Estilos personalizados para Información de Producto */
+
+body {
+    background-color: #f8f9fa; /* Un gris muy claro de fondo para que la tarjeta resalte */
+}
+
+/* Estilo para el encabezado*/
+header h1 {
+    color: #2563eb; 
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 0;
+}
+
+/* Color para el icono */
+header h1 i {
+    color: #2563eb; 
+    font-size: 1.8rem;
+}
+
+/* Línea divisoria*/
+header hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #2563eb, transparent);
+    opacity: 0.3;
+    margin-top: 10px;
+}
+
+
+/* Estilo de la Tarjeta Principal */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    transition: transform 0.3s ease;
+}
+
+
+/* Títulos de los campos (Código, Producto, etc) */
+.card-title.fw-bold {
+    color: #212529;
+    font-size: 0.95rem;
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+/* Texto de los datos */
+.card-text.text-muted {
+    font-size: 1.1rem;
+    color: #6c757d !important;
+    margin-bottom: 15px;
+}
+
+/* Estilo específico para los precios/costos */
+.col-md-4 p.card-text {
+    font-family: 'Courier New', Courier, monospace; /* Estilo numérico */
+    font-weight: 600;
+}
+
+/* Botón Regresar */
+.btn-outline-secondary {
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.btn-outline-secondary i {
+    margin-right: 8px;
+}
+
+/* Separador (HR) */
+hr {
+    border-top: 2px solid #dee2e6;
+    opacity: 1;
+}
+
+/* Ajuste de márgenes en móviles */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 30px;
+    }
+}

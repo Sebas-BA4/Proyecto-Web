@@ -1,0 +1,44 @@
+/* 1. Hacemos que el body ocupe todo el alto de la pantalla */
+/* Aseguramos que el cuerpo ocupe toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Seleccionamos el primer div container (tu contenedor principal) */
+/* y le decimos que crezca todo lo posible */
+body > .container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para el footer dentro de tu estructura */
+footer {
+    flex-shrink: 0;
+    margin-top: auto; /* Esto es el "imán" que lo pega abajo */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.alet.alert-primary {
+    background-color: #e9ecef; /* Un gris muy suave para que no compita con el azul de Bootstrap */
+    border: none;
+    border-radius: 10px;
+    color: #495057;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.alert-primary h5 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,129 @@
+/* Estilos Modernos y Minimalistas para Editar Producto */
+
+:root {
+    --primary-color: #2d6a4f; /* Verde elegante */
+    --bg-light: #f8f9fa;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Cabecera */
+/* Estilo para el encabezado */
+header h1 {
+    color: var(--primary-color); /* Usa el verde #2d6a4f que definimos antes */
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 0;
+}
+
+/* Color específico para el icono si quieres que resalte */
+header h1 i {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    opacity: 0.9;
+}
+
+/* Línea divisoria más sutil y con color */
+header hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--primary-color), transparent);
+    opacity: 0.3;
+    margin-top: 10px;
+}
+
+/* Botón Regresar */
+.btn-outline-secondary {
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    border: 1px solid #dee2e6;
+    color: #6c757d;
+    transition: var(--transition);
+}
+
+.btn-outline-secondary:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Tarjeta (Card) contenedor */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    background: #ffffff;
+    padding: 10px;
+}
+
+/* Etiquetas y Campos de entrada */
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+    margin-left: 2px;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    background-color: #fafafa;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #fff;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(45, 106, 79, 0.1);
+    outline: none;
+}
+
+/* Campos Readonly */
+/* .form-control[readonly] {
+    background-color: #f1f3f5;
+    color: #adb5bd;
+    border-color: #e9ecef;
+    cursor: not-allowed;
+} */
+
+/* Botón Actualizar */
+#btn_registrar_prod {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(45, 106, 79, 0.2);
+}
+
+#btn_registrar_prod:hover {
+    background-color: #1b4332;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(45, 106, 79, 0.3);
+}
+
+#btn_registrar_prod i {
+    font-size: 0.9rem;
+}
+
+/* Espaciado responsivo personalizado */
+.g-3 {
+    --bs-gutter-y: 1.5rem;
+}
