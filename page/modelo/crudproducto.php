@@ -44,7 +44,7 @@
 
         public function FiltrarProducto($valor) {
             $cn = $this->Conectar();
-            $sql = "call sp_filtrar_por_nombre(:valor)";
+            $sql = "call sp_filtrar_producto_por_nombre(:valor)";
             $snt = $cn->prepare($sql);
             $snt->bindParam(":valor", $valor, PDO::PARAM_STR, 40);
             $snt->execute();
