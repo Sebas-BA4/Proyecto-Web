@@ -15,6 +15,9 @@
         <li class="nav-item">
           <a class="nav-link" href="<?=$ruta?>/marca">Marcas</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?=$ruta?>/cliente">Clientes</a>
+        </li>
       </ul>
     </div>
   </div>
